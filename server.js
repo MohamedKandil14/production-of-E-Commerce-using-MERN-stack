@@ -11,10 +11,13 @@ import categoryRoutes from './routes/categoryRoutes.js';
 import  Jwt  from 'jsonwebtoken';
 import  cors from 'cors';
 import path from 'path';
-
+IMPORT { fileURLToPath} from 'url';
 dotenv.config();
 const app=express();
 connectDB();
+////////esmodule fix
+const __filename=fileURLToPath(import.meta.url);
+const __dirname=path.dirname(__filename);
 /////middlewares
 app.use(express.json())
 app.use(morgan('dev'));
