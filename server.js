@@ -11,7 +11,7 @@ import categoryRoutes from './routes/categoryRoutes.js';
 import  Jwt  from 'jsonwebtoken';
 import  cors from 'cors';
 import path from 'path';
-IMPORT { fileURLToPath} from 'url';
+import { fileURLToPath} from 'url';
 dotenv.config();
 const app=express();
 connectDB();
